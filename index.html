@@ -2,115 +2,86 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="Сайт, макет, верстка">
-  <meta name="description" content="Верстка простого макета">
-  <title>Дизайн и верстка</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <meta name="keywords" content="Фильм, смотреть, бесплатно, без регистрации.">
+  <meta name="description" content="Лучший сайт для просмотра фильмов бесплатно и без регистрации.">
+  <title>Кино</title>
 </head>
 <body>
-<!-- Header -->
-  <section class="main-section">
-    <header class="head-nav">
-      <nav class="navigation wrapper">
-        <a class="links main" href="/">Главная </a>
-        <a class="links" href="/">Об авторе</a>
-        <a class="links" href="/">Работы</a>
-        <a class="links" href="/">Процесс</a>
-        <a class="links" href="/">Контакты</a>
-      </nav>
-    </header>
-      <div class="first-block">
-        <div class="wrapper">
-          <h1>Github forever</h1>
-          <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-          <button>Написать мне</button>
-        </div>
-      </div>
-  </section>
-<!-- Main part -->
-  <main>
-    <section class="info second-block">
-      <div class="wrapper">
-        <h2>Обо мне</h2>
-        <p>Lorem Ipsum - это текст-"рыба", час то используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-      </div>
+  <header><!-- тег для определения шапки сайта-->
+    <nav>
+      <a href="/">Главная</a>
+      <a href="gallery.html"> Галирея</a>
+      <a href="/">Топ-50</a>
+      <a href="/">Новости</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+  <main><!-- тег для определения основного содержимого--> <!--Start main-->
+    <section>
+      <h1>
+        Список команд, которые мы рассматривали на занятии по работе с терминалом.
+      </h1>
+
+      <ul>
+        <h2>Первоначальная настройка</h2>
+        <li>
+          git config --global user.name "[имя]"<strong> - Устанавливает имя, которое будет отображаться в поле автора у выполняемых вами коммитов</strong>
+        </li>
+        <li>
+          git config --global user.email "[адрес электронной почты]"<strong> - Устанавливает адрес электронной почты, который будет отображаться в информации о выполняемых вами коммитах</strong>
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Первоначальная настройка</h2>
+        <li>
+          git config --global user.name "[имя]"<strong> - Устанавливает имя, которое будет отображаться в поле автора у выполняемых вами коммитов</strong></li>
+        <li>
+          git config --global user.email "[адрес электронной почты]"<strong> - Устанавливает адрес электронной почты, который будет отображаться в информации о выполняемых вами коммитах</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Создание репозитория</h2>
+        <li>git init [название проекта]<strong> - Создаёт новый локальный репозиторий с заданным именем</strong></li>
+        <li>git clone [url-адрес]<strong> - Скачивает репозиторий вместе со всей его историей изменений</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Операции с файлами</h2>
+        <li>git rm [файл]<strong> - Удаляет конкретный файл из рабочей директории и индексирует его удаление</strong></li>
+        <li> git rm --cached [файл]<strong> - Убирает конкретный файл из контроля версий, но физически оставляет его на своём месте</strong></li>
+        <li>git mv [оригинальный файл] [новое имя]<strong> - Перемещает и переименовывает указанный файл, сразу индексируя его для последующего коммита</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Сохранение фрагментов</h2>
+        <li>git stash<strong> - Временно сохраняет все незафиксированные изменения отслеживаемых файлов</strong></li>
+        <li>git stash pop<strong> - Восстанавливает состояние ранее сохранённых версий файлов</strong></li>
+        <li>git stash list<strong> - Выводит список всех временных сохранений</strong></li>
+        <li>git stash drop<strong> - Сбрасывает последние временно сохранённыe изменения</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Внесение изменений</h2>
+        <li>git status<strong> - Перечисляет все новые или изменённые файлы, которые нуждаются в фиксации</strong></li>
+        <li>git diff<strong> - Показывает различия по внесённым изменениям в ещё не проиндексированных файлах</strong></li>
+        <li>git add [файл]<strong> - Индексирует указанный файл для последующего коммита</strong></li><br>
+        <li>git diff --staged<strong> - Показывает различия между проиндексированной и последней зафиксированной версиями файлов</strong></li>
+        <li>git reset [файл]<strong> - Отменяет индексацию указанного файла, при этом сохраняет его содержимое</strong></li>
+        <li>git commit -m "[сообщение с описанием]"<strong> - Фиксирует проиндексированные изменения и сохраняет их в историю версий</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Откат коммитов</h2>
+        <li>git reset [коммит]<strong> - Отменяет все коммиты после заданного, оставляя все изменения в рабочей директории</strong></li>
+        <li>git reset --hard [коммит]<strong>Сбрасывает всю историю вместе с состоянием рабочей директории до указанного коммита.</strong></li>
+      </ul>
+
+      <ul>
+        <h2>Синхронизация с удалённым репозиторием</h2>
+        <li>git fetch [удалённый репозиторий]<strong> - Скачивает всю историю из удалённого репозитория</strong></li>
+        <li>git merge [удалённый репозиторий]/[ветка]<strong> - Вносит изменения из ветки удалённого репозитория в текущую ветку локального репозитория</strong></li>
+        <li>git push [удалённый репозиторий] [ветка]<strong> - Загружает все изменения локальной ветки в удалённый репозиторий</strong></li>
+        <li>git pull<strong> - Загружает историю из удалённого репозитория и объединяет её с локальной. pull = fetch + merge</strong></li>
+      </ul>
     </section>
-    <section class="progect-cards">
-      <div class="wrapper">
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/project.png" alt="image">
-          <div class="element">
-            <p class="number-of">40+</p>
-            <p class="value">проектов</p>
-          </div>
-        </div> 
-      </div>
-    </section>
-    <section class="info third-block">
-      <div class="wrapper">
-        <h2>Как я работаю</h2>
-        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        <iframe 
-          width="560"
-          height="315" 
-          src="https://www.youtube.com/embed/FRGiVUp8ews" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
-  </main>
-<!-- Footer -->
-  <footer class="footer-info ">
-    <div class="wrapper">
-      <p class="autor"> 
-        Иванов Иван
-      </p>
-      <p class="quote"> 
-        (с) 2018. Все права защищены.
-      </p>
-    </div>
-  </footer>
-</body>
-</html>
