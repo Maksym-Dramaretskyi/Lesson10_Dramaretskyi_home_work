@@ -1,19 +1,21 @@
-* {
-  box-sizing: border-box;
-}
 
-.Centr {
+
+.centr {
   text-align: center;
-
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #24292f;
 }
 
-nav {
+
+nav a {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
   margin-right: 42px;
+  color: aliceblue;
+
 }
