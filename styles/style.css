@@ -1,5 +1,4 @@
 
-
 .centr {
   text-align: center;
   padding-top: 20px;
@@ -7,6 +6,9 @@
   background-color: #24292f;
 }
 
+.color_section {
+  background-color: beige;
+}
 
 nav a {
   font-weight: 400;
